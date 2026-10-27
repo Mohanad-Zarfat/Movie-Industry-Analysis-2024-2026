@@ -8,9 +8,9 @@
 ![License](https://img.shields.io/badge/License-MIT-2EC4B6)
 ![Status](https://img.shields.io/badge/Status-Complete-7BC950)
 
-> A full-stack data analytics project exploring **916 movies released between 2024 and 2026** —
+> A full-stack data analytics project exploring **916 movies released between 2024 and 2026**
 > box office economics, genre strategy, studio power rankings, release timing and audience
-> ratings — analyzed end-to-end with **Python (EDA + 16 charts)**, **PostgreSQL (17 queries)**
+> ratings analyzed end-to-end with **Python (EDA + 16 charts)**, **PostgreSQL (17 queries)**
 > and **Power BI (interactive dashboard)**.
 
 <p align="center">
@@ -22,8 +22,8 @@
 ## 📌 Why This Project
 
 Every studio asks the same two questions: *what should we make, and when should we release it?*
-This project answers both with data. It combines three analytical layers — a reproducible
-Python pipeline, a PostgreSQL query suite and a Power BI dashboard — into one coherent
+This project answers both with data. It combines three analytical layers a reproducible
+Python pipeline, a PostgreSQL query suite and a Power BI dashboard into one coherent
 story about what actually drives a movie's financial success in the 2024–2026 era.
 
 ## 🔑 Key Insights
@@ -103,7 +103,7 @@ and a data-quality audit. Load the CSV once:
 ### 3 · Power BI — interactive dashboard
 `powerbi/Movie_Industry_Dashboard.pbix` (open in Power BI Desktop) includes a movie-level
 table, Top-10-studios and revenue-trend pivots, and slicers for year, genre and content
-rating — useful for slicing the same questions interactively.
+rating useful for slicing the same questions interactively.
 
 ## 🧾 Dataset Notes
 
@@ -112,7 +112,7 @@ rating — useful for slicing the same questions interactively.
 - **Known quirks (handled):**
   - `director` missing for 305 rows and `release_day` for 676 → treated as "unknown /
     day-1-of-month" and excluded from day-level analysis.
-  - 2 titles appear in two different release years (*The Long Game*, *Don't Move*) —
+  - 2 titles appear in two different release years (*The Long Game*, *Don't Move*)
     kept deliberately as separate release events.
   - `production_company` strings may chain several studios (`/`-separated); analysis uses
     the **first** company as `primary_studio`.
